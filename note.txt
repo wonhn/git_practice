@@ -1,31 +1,31 @@
-##
-커밋(commit) : 프로젝트 디렉토리의 특정 모습을 하나의 버전으로 남기는 행위&결과물 
-레포지토리(repository) : 커밋이 저장되는 곳 
+### GIT
+* 커밋(commit) : 프로젝트 디렉토리의 특정 모습을 하나의 버전으로 남기는 행위&결과물 
+* 레포지토리(repository) : 커밋이 저장되는 곳 
 
 
-# 레포지토리 만들기
+### 레포지토리 만들기
 $git init
 Initialized empty Git repository in [git root]/.git
-    비어있는 레포지토리를 생성했다.
-    하위에 .git디렉토리가 생성됨Git구조
+* 비어있는 레포지토리를 생성했다.
+* 하위에 .git디렉토리가 생성됨Git구조
 
-# Git의 내부
-Working directory: 작업영역. Working tree라고도 함 
-Staging area : commit대상 파일들을 올려두는 곳 
-Repository : 커밋할때의 모습을 버전으로 올려두는 곳 Git에서 관리되는 파일의 상태
+### Git의 내부
+* Working directory: 작업영역. Working tree라고도 함 
+* Staging area : commit대상 파일들을 올려두는 곳 
+* Repository : 커밋할때의 모습을 버전으로 올려두는 곳 Git에서 관리되는 파일의 상태
 
-# Git의 관리되는 파일 상태
-Untracked : 한번도 올라간적 없는 파일 
-Tracked : 한번이라도 올라가서 추적이 되는 파일 
-    Staged : add되어서 stage area에 올라가있는 상태 
-    Unmodified : commit한 버전과 다른점이 없는 상태 
-    Modified : commit한 버전과 다른점이 있는 상태 리모트 레포지토리의 장점 
+### Git의 관리되는 파일 상태
+* Untracked : 한번도 올라간적 없는 파일 
+* Tracked : 한번이라도 올라가서 추적이 되는 파일 
+    * Staged : add되어서 stage area에 올라가있는 상태 
+    * Unmodified : commit한 버전과 다른점이 없는 상태 
+    * Modified : commit한 버전과 다른점이 있는 상태 리모트 레포지토리의 장점 
 
-# Git 원격 레포지토리의 장점
-안정성 : 로컬 환경에 문제가 생겼을때 작업물을 보호할 수 있다. 
-협업성 : 다른 개발자들과 리모트 레포지토리에 개발을 같이 진행할 수 있다. 
+### Git 원격 레포지토리의 장점
+1. 안정성 : 로컬 환경에 문제가 생겼을때 작업물을 보호할 수 있다. 
+2. 협업성 : 다른 개발자들과 리모트 레포지토리에 개발을 같이 진행할 수 있다. 
 
-#명령어
+### 명령어
     git init : 현재 디렉토리를 Git이 관리하는 프로젝트 디렉토리(=working directory)로 설정하고 그 안에 레포지토리(.git 디렉토리) 생성
     git config user.name 'codeit' : 현재 사용자의 아이디를 'codeit'으로 설정(커밋할 때 필요한 정보)
     git config user.email 'teacher@codeit.kr' : 현재 사용자의 이메일 주소를 'teacher@codeit.kr'로 설정(커밋할 때 필요한 정보)
