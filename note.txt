@@ -1,0 +1,44 @@
+##
+커밋(commit) : 프로젝트 디렉토리의 특정 모습을 하나의 버전으로 남기는 행위&결과물 
+레포지토리(repository) : 커밋이 저장되는 곳 
+
+
+# 레포지토리 만들기
+$git init
+Initialized empty Git repository in [git root]/.git
+    비어있는 레포지토리를 생성했다.
+    하위에 .git디렉토리가 생성됨Git구조
+
+# Git의 내부
+Working directory: 작업영역. Working tree라고도 함 
+Staging area : commit대상 파일들을 올려두는 곳 
+Repository : 커밋할때의 모습을 버전으로 올려두는 곳 Git에서 관리되는 파일의 상태
+
+# Git의 관리되는 파일 상태
+Untracked : 한번도 올라간적 없는 파일 
+Tracked : 한번이라도 올라가서 추적이 되는 파일 
+    Staged : add되어서 stage area에 올라가있는 상태 
+    Unmodified : commit한 버전과 다른점이 없는 상태 
+    Modified : commit한 버전과 다른점이 있는 상태 리모트 레포지토리의 장점 
+
+# Git 원격 레포지토리의 장점
+안정성 : 로컬 환경에 문제가 생겼을때 작업물을 보호할 수 있다. 
+협업성 : 다른 개발자들과 리모트 레포지토리에 개발을 같이 진행할 수 있다. 
+
+#명령어
+    git init : 현재 디렉토리를 Git이 관리하는 프로젝트 디렉토리(=working directory)로 설정하고 그 안에 레포지토리(.git 디렉토리) 생성
+    git config user.name 'codeit' : 현재 사용자의 아이디를 'codeit'으로 설정(커밋할 때 필요한 정보)
+    git config user.email 'teacher@codeit.kr' : 현재 사용자의 이메일 주소를 'teacher@codeit.kr'로 설정(커밋할 때 필요한 정보)
+    git add [파일 이름] : 수정사항이 있는 특정 파일을 staging area에 올리기
+    git add [디렉토리명] : 해당 디렉토리 내에서 수정사항이 있는 모든 파일들을 staging area에 올리기
+    git add . : working directory 내의 수정사항이 있는 모든 파일들을 staging area에 올리기
+    git reset [파일 이름] : staging area에 올렸던 파일 다시 내리기
+    git status : Git이 현재 인식하고 있는 프로젝트 관련 내용들 출력(문제 상황이 발생했을 때 현재 상태를 파악하기 위해 활용하면 좋음)
+    git commit -m "커밋 메시지" : 현재 staging area에 있는 것들 커밋으로 남기기
+    git help [커맨드 이름] : 사용법이 궁금한 Git 커맨드의 공식 메뉴얼 내용 출력
+    git push -u origin master : 로컬 레포지토리의 내용을 처음으로 리모트 레포지토리에 올릴 때 사용합니다
+    (-u origin master가 무슨 뜻인지는 'Git에서 브랜치 사용하기' 챕터에서 배울 거니까 걱정마세요!)
+    git push : 로컬 레포지토리의 내용을 리모트 레포지토리에 보내기
+    git pull : 리모트 레포지토리의 내용을 로컬 레포지토리로 가져오기
+    git clone [프로젝트의 GitHub 상 주소] : GitHub에 있는 프로젝트를 내 컴퓨터로 가져오기
+
