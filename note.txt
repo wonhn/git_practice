@@ -45,7 +45,9 @@ git commit -> 에디터가 실행되어 긴 커밋메세지를 남길 수 있다
 git commit --amend  // 수정하다
 
 
-
+## alias설정
+git config alias.history 'log --pretty=oneline'
+>> git history
 
 
 
