@@ -25,6 +25,30 @@ Initialized empty Git repository in [git root]/.git
 1. 안정성 : 로컬 환경에 문제가 생겼을때 작업물을 보호할 수 있다. 
 2. 협업성 : 다른 개발자들과 리모트 레포지토리에 개발을 같이 진행할 수 있다. 
 
+
+## 커밋히스토리
+git log
+커밋아이디 = 커밋해시
+
+git log --pretty=oneline // 좀더 깔끔하게 보기:oneline한줄로보기
+
+git show [커밋해시]
+    --- a/[파일명] // 커밋 전. 빨강.
+    +++ b/[파일명] // 커밋 후. 초록.
+
+
+## 옵션m 없이 커밋메세지 남기는 법
+git commit -> 에디터가 실행되어 긴 커밋메세지를 남길 수 있다
+
+
+## 최신 커밋 수정하기
+git commit --amend  // 수정하다
+
+
+
+
+
+
 ### 명령어
     git init : 현재 디렉토리를 Git이 관리하는 프로젝트 디렉토리(=working directory)로 설정하고 그 안에 레포지토리(.git 디렉토리) 생성
     git config user.name 'codeit' : 현재 사용자의 아이디를 'codeit'으로 설정(커밋할 때 필요한 정보)
