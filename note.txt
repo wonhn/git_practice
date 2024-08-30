@@ -63,7 +63,10 @@ git diff [커밋해시A] [커밋해시B]
 매번 더 새로운 커밋을 가리킴
 
 
-##
+## git reset 과거 커밋으로 아예 돌아가고 싶을때
+git reset --hard [HEAD]
+
+
 
 
 ### 명령어
