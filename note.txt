@@ -54,6 +54,15 @@ git config alias.history 'log --pretty=oneline'
 git merge --allow-unrelated-histories <branch-name>
 
 
+## commit비교하기 
+git diff [커밋해시A] [커밋해시B]
+
+
+## HEAD 헤드
+보통 가장 최근에 한 커밋을 가리킴
+매번 더 새로운 커밋을 가리킴
+
+
 ##
 
 
