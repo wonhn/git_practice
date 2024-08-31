@@ -63,10 +63,21 @@ git diff [커밋해시A] [커밋해시B]
 매번 더 새로운 커밋을 가리킴
 
 ## git reset 과거 커밋으로 아예 돌아가고 싶을때
-git reset --hard [HEAD]
+git reset --soft [HEAD]
+    working directory 유지
+    staging area 유지
+    repository [HEAD]를 가리킴
+git reset --mixed [HEAD]
+    working directory 유지
+    staging area [HEAD]버전 커밋으로 바뀜
+    repository [HEAD]를 가리킴
+git reset --hard [HEAD] : 커밋 이후로 한 작업들이 모두 사라짐
+    working directory [HEAD]버전 커밋으로 바뀜
+    staging area [HEAD]버전 커밋으로 바뀜
+    repository [HEAD]를 가리킴
 
 
-## test1
+##
 
 
 ### 명령어
