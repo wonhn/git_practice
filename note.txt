@@ -77,7 +77,7 @@ git reset --hard [HEAD] : 커밋 이후로 한 작업들이 모두 사라짐
     repository [HEAD]를 가리킴
 
 
-## !!
+## !!??
 
 
 ### 명령어
