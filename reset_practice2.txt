@@ -1,0 +1,3 @@
+## git reset --[option] 실습을 위한 샘플2
+
+1. Hello, Nice to meet you
