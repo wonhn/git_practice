@@ -88,6 +88,7 @@ git reset --hard [HEAD] : 커밋 이후로 한 작업들이 모두 사라짐
 
     git push origin master:master
 
+z?
 
 ### 명령어
     git init : 현재 디렉토리를 Git이 관리하는 프로젝트 디렉토리(=working directory)로 설정하고 그 안에 레포지토리(.git 디렉토리) 생성
