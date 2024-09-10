@@ -78,7 +78,15 @@ git reset --hard [HEAD] : 커밋 이후로 한 작업들이 모두 사라짐
 
 
 ## branch
-프리미엄...ㅠㅠ 
+
+## remote repository & branch
+1. origin
+    git remote add origin [주소]
+2. tracking connection
+    git push -u origin master
+    git push --set-upstream origin master
+
+    git push origin master:master
 
 
 ### 명령어
